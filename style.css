@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Bayon&family=Big+Shoulders+Display:wght@100..900&family=Chango&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&family=League+Spartan:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f8f8fb;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	font-family: "League Spartan", serif;
+}
+
+header {
+	display: flex;
+	background-color: #373b53;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.dark {
+	width: 20%;
+}
+
+.right-nav {
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	align-items: center;
+	height: 100%;
+}
+
+.border-profil {
+	border-left: 2px solid #494e6e;
+	padding: 20px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+}
+
+.coutnaire {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	gap: 50px;
+	align-items: center;
+}
+
+.left-coutnaire h2 {
+	color: #0c0e16;
+	font-size: 30px;
+}
+
+.left-coutnaire p {
+	size: 13px;
+	font-weight: 700;
+	color: #888eb0;
+}
+
+label {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+label p {
+	color: #0c0e16;
+	font-weight: 900;
+	font-size: 18px;
+}
+
+label select {
+	border: none;
+	color: #7c5dfa;
+	background-color: #f8f8fb;
+}
+
+.right-count {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.add {
+	display: flex;
+	flex-direction: row;
+}
+
+.add button {
+	background-color: #7c5dfa;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	display: flex;
+
+	align-items: center;
+	gap: 10px;
+	border-radius: 24px;
+}
+
+.add button p {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.bg-blanc {
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	border-radius: 50%;
+}
+
+/* .main-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 100px;
+	gap: 30px;
+	width: 100%;
+}
+
+.main-center p {
+	width: 50%;
+	font-weight: 700;
+	font-size: 15px;
+	color: #888eb0;
+	text-align: center;
+} */
+
+table {
+	padding: 30px;
+}
+
+tr {
+	background-color: white;
+	box-shadow: 0px 10px 10px -10px #48549f1a;
+}
+
+td {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	gap: 30px;
+}
+
+.head {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.end {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.paye {
+	background-color: #33d69f;
+	
+}
+
+@media screen and (min-width: 768px) {
+	.coutnaire {
+		display: flex;
+		justify-content: space-between;
+		padding: 20px;
+		width: 100%;
+	}
+
+	.left-coutnaire p {
+		font-size: 13px;
+		font-weight: 500;
+	}
+
+	.add button {
+		padding: 10px 30px;
+	}
+
+	.add button p {
+		font-size: 15px;
+		font-weight: 700;
+	}
+
+	/* .main-center p {
+		width: 25%;
+		text-align: center;
+		font-weight: 500;
+	} */
+}
+
+@media screen and (min-width: 1440px) {
+	body {
+		display: flex;
+		flex-direction: row;
+		height: 100vh;
+	}
+
+	header {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+	}
+
+	nav {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.right-nav {
+		display: flex;
+		flex-direction: column;
+		margin-top: 650px;
+	}
+
+	.dark {
+		width: 25%;
+	}
+
+	.border-profil {
+		border-left: none;
+		border-top: 2px solid #494e6e;
+		width: 100%;
+	}
+
+	.border-profil img {
+		width: 100%;
+		height: 100%;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 100px;
+		width: 80%;
+	}
+
+	/* .main-center img {
+		width: 40%;
+	} */
+}
